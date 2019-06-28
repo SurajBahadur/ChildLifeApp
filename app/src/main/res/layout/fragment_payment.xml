@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash_screen">
+
+
+    <TextView
+        android:id="@+id/payment_summary"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_summary"
+        android:textSize="@dimen/_15ssp"
+        android:gravity="center_vertical|center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/kgtenthousandreasonsalt"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+
+        android:id="@+id/payment_heading"
+        android:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_heading"
+        android:textSize="@dimen/_15ssp"
+        android:gravity="center_vertical|center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/payment_summary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+ <!--   <EditText
+        android:id="@+id/et_pay_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/et_background"
+        android:fontFamily="@font/opensans_regular"
+        android:hint="@string/name"
+        android:paddingStart="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/main_payment_heading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_pay_card_no"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/et_background"
+        app:layout_constraintTop_toBottomOf="@+id/et_pay_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/et_card_number"
+        android:paddingStart="@dimen/_5sdp"/>
+
+    <EditText
+        android:id="@+id/et_pay_exp_date"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/et_background"
+        app:layout_constraintTop_toBottomOf="@+id/et_pay_card_no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline1"
+        android:hint="@string/et_expiry_date"
+        android:paddingStart="@dimen/_5sdp"/>
+
+    <EditText
+        android:id="@+id/et_pay_cvv"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/et_background"
+        app:layout_constraintTop_toBottomOf="@+id/et_pay_card_no"
+        app:layout_constraintStart_toEndOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/et_cvv"
+        android:paddingStart="@dimen/_5sdp"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".50" />
+
+
+    <TextView
+
+        android:id="@+id/btn_pay_by_card"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/whiteColor"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        android:text= "@string/btn_card"
+        android:onClick="onPurchase"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pay_cvv" />-->
+    <com.braintreepayments.cardform.view.CardForm
+        android:id="@+id/card_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+
+        android:id="@+id/btn_pay_by_card"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_58sdp"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/whiteColor"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        android:text= "Checkout now"
+        android:textAllCaps="true"
+        android:onClick="onPurchase"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_heading" />
+    <TextView
+         android:visibility="gone"
+        android:id="@+id/btn_paypal"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/whiteColor"
+        android:fontFamily="@font/opensans_regular"
+        android:gravity="center"
+        android:text="@string/btn_paypal"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pay_by_card" />
+</android.support.constraint.ConstraintLayout>

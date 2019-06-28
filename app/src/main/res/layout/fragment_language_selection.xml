@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash_screen">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+    <TextView
+        android:layout_marginTop="@dimen/_25sdp"
+        android:id="@+id/tv_select_language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kgtenthousandreasonsalt"
+        android:textSize="@dimen/_14ssp"
+        android:text="@string/select_language"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/spinner_bg"
+            android:id="@+id/spin"
+            app:layout_constraintTop_toBottomOf="@+id/tv_select_language"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal|center"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginStart="@dimen/_5sdp"
+                android:id="@+id/iv_flag"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/uk"/>
+
+
+            <TextView
+                android:id="@+id/iv_language"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textSize="@dimen/_14ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uk_language"/>
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_arrow_drop_down"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_imp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_bold"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            android:textColor="@color/whiteColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spin"
+            android:text="@string/import_read"/>
+    <TextView
+        android:textColor="@color/whiteColor"
+        android:id="@+id/tv_term_text"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_regular"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imp"
+        android:autoLink="web"
+        android:text="@string/terms_cond"/>
+    <TextView
+        android:id="@+id/tv_cnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/kgtenthousandreasonsalt"
+        android:gravity="center"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/continue_"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="normal"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_term_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_cnt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"></View>
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline1_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".25" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline21_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".75" />
+        <fr.castorflex.android.smoothprogressbar.ContentLoadingSmoothProgressBar
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline1_"
+            app:layout_constraintEnd_toStartOf="@id/guideline21_"
+            android:id="@+id/progress"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            app:spb_sections_count="4"
+            app:spb_colors="@array/multiColor"
+            app:spb_speed="8.0"
+            app:spb_stroke_width="5dp"
+            app:spb_stroke_separator_length="0dp"
+            app:spb_reversed="false"
+            app:spb_mirror_mode="false"
+            app:spb_progressiveStart_activated="false"
+            app:spb_progressiveStart_speed="8.5"
+            app:spb_progressiveStop_speed="1.4"
+            />
+</android.support.constraint.ConstraintLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

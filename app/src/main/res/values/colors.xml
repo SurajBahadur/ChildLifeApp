@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/black</color>
+    <color name="colorAccent">@android:color/darker_gray</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="selftextColor">#BEBDFF</color>
+    <color name="blackColor">#000000</color>
+    <color name="communitytextColor">#F79F39</color>
+    <color name="socialskillstextColor">#FCFF66</color>
+    <color name="theworldtextColor">#87FFD3</color>
+    <color name="problemtextColor">#FF3E3E</color>
+    <color name="alltextColor">#000000</color>
+    <color name="toolbarColor">#FE0000</color>
+    <color name="ratebottomColor">#FE0000</color>
+    <color name="timingsBgColor">#00FE00</color>
+    <color name="materialsBgColor">#72E4fE</color>
+    <color name="warningBgColor">#FEFE00</color>
+    <color name="greyColor">#D8D8D8</color>
+
+    <!--Multicolor-->
+    <array name="multiColor">
+        <item>#008440</item>
+        <item>#C52429</item>
+        <item>#D9CCC4</item>
+        <item>#006891</item>
+    </array>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/schedule_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/schedule_activity"
+            android:fontFamily="@font/kgtenthousandreasonsalt"
+            android:textColor="@color/whiteColor"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_17sdp"/>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_dates"
+            android:background="@drawable/premium_feilds_bg"
+            android:padding="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"></android.support.v7.widget.RecyclerView>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_time"
+            android:background="@drawable/premium_feilds_bg"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="@dimen/_80sdp"></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Remind me:"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textSize="@dimen/_13sdp"/>
+<RadioGroup
+    android:id="@+id/rg_button"
+
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:checked="false"
+        android:id="@+id/rb_at_the_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:text="AT THE TIME"/>
+
+    <RadioButton
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:id="@+id/rb_min_before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:text="30 MINS BEFORE"/>
+
+</RadioGroup>
+
+        <Button
+            android:id="@+id/btn_reminder"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:text="Set reminder"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

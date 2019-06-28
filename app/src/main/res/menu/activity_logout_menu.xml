@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/nav_item_tabs"
+            android:iconTint="@color/whiteColor"
+            android:title="My activities" />
+
+        <item android:id="@+id/nav_pro_item_home"
+            android:iconTint="@color/whiteColor"
+            android:title="Selection options" />
+        <item android:id="@+id/nav_item_one"
+            android:iconTint="@color/whiteColor"
+            android:title="Access more activities and features" />
+        <item android:id="@+id/nav_logout"
+            android:iconTint="@color/whiteColor"
+            android:title="Logout" />
+
+    </group>
+
+    <!-- <group android:id="@+id/group_menu">
+
+     </group>
+
+     <item android:title="Title 1">
+         <menu>
+             <item android:id="@+id/nav_item_six"
+                 android:iconTint="@color/white"
+                 android:icon="@drawable/ic_edit_grey"
+                 android:title="Item 6" />
+             <item android:id="@+id/nav_item_seven"
+                 android:iconTint="@color/white"
+                 android:icon="@drawable/ic_edit_grey"
+                 android:title="Item 7" />
+         </menu>
+     </item>-->
+</menu>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:fontFamily="@font/kgtenthousandreasonsalt"
+        android:text="@string/lets_login"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tvConnectWithSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/connect_with_social"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/kgtenthousandreasonsalt"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toBottomOf="@+id/include" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/btn_lay"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvConnectWithSocial"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/btFacebook"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/fb_button_bg"
+        android:drawableStart="@drawable/ic_twitter_bird"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:text="@string/login_Twitter"
+        app:layout_constraintVertical_bias="1.0" >
+
+        <ImageView
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@mipmap/facebook_logo"/>
+        <TextView
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/opensans_regular"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FACEBOOK"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btGoogle"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/button_bg"
+        android:drawableStart="@drawable/ic_twitter_bird"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:text="@string/login_Twitter"
+        app:layout_constraintVertical_bias="1.0" >
+        <ImageView
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@mipmap/google_plus"/>
+        <TextView
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/opensans_regular"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GOOGLE"/>
+    </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:background="@drawable/fb_button_bg"
+            android:drawableStart="@mipmap/facebook_logo"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/login_facebook"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvConnectWithSocial" />
+        <LinearLayout
+            android:id="@+id/bttwitter"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/google_button_bg"
+            android:drawableStart="@drawable/ic_twitter_bird"
+            android:padding="8dp"
+            android:text="@string/login_Twitter"
+            app:layout_constraintVertical_bias="1.0" >
+
+            <ImageView
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_twitter_bird"/>
+            <TextView
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/opensans_regular"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TWITTER"/>
+
+
+
+        </LinearLayout>
+        <Button
+            android:visibility="gone"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/button_bg"
+            android:drawableStart="@mipmap/google_plus"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/login_google"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/btFacebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="@+id/btFacebook"
+            app:layout_constraintVertical_bias="1.0" />
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline11_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".40" />
+
+    <TextView
+        android:id="@+id/signup_textview2"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:fontFamily="@font/kgtenthousandreasonsalt"
+        android:text="@string/create_account"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lay" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_textview2" ></View>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent=".5" />
+    <android.support.constraint.ConstraintLayout
+        android:visibility="gone"
+        android:id="@+id/login_loading_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal|center_vertical|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorName="LineScaleIndicator"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline1_"
+            app:layout_constraintEnd_toStartOf="@id/guideline21_"
+
+            />
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline1_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".25" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline21_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".75" />
+
+        <fr.castorflex.android.smoothprogressbar.ContentLoadingSmoothProgressBar
+            android:visibility="visible"
+            android:layout_gravity="center_horizontal|center_vertical|center"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/guideline1_"
+            app:layout_constraintEnd_toStartOf="@id/guideline21_"
+            android:id="@+id/progress"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            app:spb_sections_count="4"
+            app:spb_colors="@array/multiColor"
+            app:spb_speed="8.0"
+            app:spb_stroke_width="5dp"
+            app:spb_stroke_separator_length="0dp"
+            app:spb_reversed="false"
+            app:spb_mirror_mode="false"
+            app:spb_progressiveStart_activated="false"
+            app:spb_progressiveStart_speed="8.5"
+            app:spb_progressiveStop_speed="1.4"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

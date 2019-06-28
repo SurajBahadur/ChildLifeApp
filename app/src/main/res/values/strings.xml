@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">LifeGames</string>
+
+    <string name="logout_heading">WARNING</string>
+    <string name="Sure_Logout">if you log out, you will need to log back in to access your paid content. Are you sure you want to log out?</string>
+    <string name="yes_Logout">Logout</string>
+    <string name="no_Logout">Cancel</string>
+    <string name="password">Password</string>
+    <string name="login_facebook">FACEBOOK</string>
+    <string name="login_google">GOOGLE</string>
+    <string name="login_Twitter">TWITTER</string>
+    <string name="select_language">Please select your language</string>
+    <string name="uk_language">UK English</string>
+    <string name="import_read"><B>Important, please read!!</B></string>
+    <string name="terms_cond">Firstly, thank you so much for downloading our app! We hope that you and your group enjoy our games and activities as much as we\'ve enjoyed making them.\n\n
+        Please bear in mind that while we\'ve made every effort to create activities that can be used in all situations, some activities may not suit your particular environment or group situation. Please read each activity carefully before trying it and make adjustments where necessary to suit your particular situation.\n\n
+        Also, some activities make use of prizes as a way of reinforcing the lesson. Again, this may or may not be appropriate to your particular situation, so please make your own judgement and adapt the activities to your own particular needs.\n\n
+        Please note, by continuing to use this app you acknowledge consent to our privacy policy and terms and conditions.</string>
+
+    <!-- Selection screen strings-->
+    <string name="select_an_age_group">Select an age group</string>
+    <string name="let_s_play_a_game_about">Let\'s play a game about:</string>
+    <string name="let_s_play">Let\'s Play!</string>
+    <string name="continue_">CONTINUE</string>
+    <string name="change_settings">(You can change these settings later)</string>
+
+    <!-- Premium screen strings-->
+    <string name="premium_page_heading">Access more activities and features</string>
+    <string name="first_selection_heading">12 activity add-on pack</string>
+    <string name="first_selection_detail">Download 12 new activities in your selected age group.</string>
+
+    <string name="second_selection_heading">Monthly Subscription</string>
+    <string name="second_selection_detail">Get 12 new activities every month, access to the activity planner, online support and our tips and tricks blog.</string>
+    <string name="per_month">per month</string>
+
+    <string name="complete_option_heading">Complete %1$s</string>
+    <string name="age_group">Music</string>
+    <string name="complete_option_detail">Instant access to all activities in the %1$s age group, the activity planner, online support and tips and tricks.</string>
+
+    <string name="third_selection_heading">Ultimate Package</string>
+    <string name="third_selection_detail">Instant access to all LifeGames activities, the activity planner, online support and our tips and tricks blog.</string>
+    <string name="next_btn">Next</string>
+
+    <string name="euro1">\u20ac 6.99</string>
+    <string name="euro2">\u20ac 4.99</string>
+    <string name="euro3">\u20ac 74.99</string>
+    <string name="euro4">\u20ac 29.99</string>
+
+    <!-- Main screen strings-->
+    <string name="new_tab">NEW</string>
+    <string name="done_tab">DONE</string>
+
+    <!-- Payment screen strings-->
+    <string name="pay_summary">Purchase Summary</string>
+    <string name="pay_heading">Buy LifeGames %1$s for \u20ac%2$s</string>
+    <string name="btn_card">PAY THROUGH CARD</string>
+    <string name="btn_paypal">PAY THROUGH PAYPAL</string>
+
+
+
+    <!-- Activtiy Detail screen strings-->
+    <string name="rate_this_activity">RATE THIS ACTIVITY</string>
+    <!-- Confirm text-->
+    <string name="confirmText">(You can confirm your purchase later.)</string>
+
+    <!--Review Dialog-->
+    <string name="reviewHeading">Add a review?</string>
+    <string name="reviewHint">Tell us what you thought…</string>
+    <string name="reviewDone">DONE</string>
+
+
+    <!-- Terms and conditions-->
+    <string name="terms_and_conditions">
+        By continuing, you agree to the <u>terms and conditions</u> of using this app</string>
+
+    <!-- FORGOT-->
+
+    <!--REGISTRATION-->
+
+    <string name="facebook_app_id">318264358893088</string>
+    <string name="no_internet_message">Internet connection appears to be offline. Please check your network settings.</string>
+
+    <string name="dummyText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+
+
+
+    <!--common-->
+    <string name="schedule_activity">Schedule this activity</string>
+
+
+    <string name="please_wait">Please wait...</string>
+
+    <string name="on">on</string>
+
+
+    <string name="home_back_button">Please click BACK again to exit.</string>
+    <string name="nothing_available">Nothing available</string>
+
+
+    /* add contact*/
+
+
+    /* todo_task*/
+
+    <string name="permission_denied">Permission has been denied, you need to give permission to do the operation, press OK to open settings</string>
+
+
+    <string name="not_visited_yet">Not visited yet!</string>
+    <string name="dialog_app_name">Best Tyme</string>
+
+
+    //channel steup fo rpush notificaiton in android oreo
+
+
+    <string name="lets_login">Please log in or create an account</string>
+    <string name="lets_setup">Please create a user account</string>
+    <string name="create_account"><u>Create an account</u></string>
+    <string name="name">First name</string>
+    <string name="full_name">Last name</string>
+    <string name="your_email">Your email</string>
+    <string name="done">Create account</string>
+    <string name="login_">Login</string>
+    <string name="connect_with_social">or connect with social account</string>
+
+
+
+
+    <!-- Twitter API Key's-->
+    <string name="API_KEY">ZOgN4F7LCotMs0KIfWYtNx9v6 </string>
+    <string name="API_SECRET_KEY">njcO9Z0dS455ek3m3FeOyhOplERuGTr4V5aBzSeWd852x34Hat</string>
+    <string name="remove_fav">Remove</string>
+    <string name="add_to_planner">Add to planner</string>
+    <string name="play_btn">Play!</string>
+    <string name="add_to_fav">Add to favourites</string>
+    <string name="set_for">Set for:</string>
+
+</resources>

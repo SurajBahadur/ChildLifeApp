@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_lay">
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".02" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".33" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".66" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="12dp" />
+    <TextView
+        android:id="@+id/tv_done_activity_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/opensans_semibold"
+        android:text="The Toy Bank"
+        android:textColor="#000000"
+        android:ellipsize="end"
+        android:gravity="center|start"
+        android:textSize="@dimen/_20ssp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_done_category_icon"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_done_activity_title"
+        app:layout_constraintEnd_toEndOf="@id/tv_done_rate_activity"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <RatingBar
+        android:id="@+id/tv_done_rate_activity"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.1"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        app:layout_constraintTop_toTopOf="@+id/iv_done_category_icon"
+        app:layout_constraintBottom_toBottomOf="@id/iv_done_category_icon"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/iv_done_category_icon" />
+
+    <TextView
+        android:id="@+id/tv_brief_detail_done_activity"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensans_semibold"
+        android:text="@string/dummyText"
+        android:textColor="#000000"
+        android:paddingBottom="@dimen/_8sdp"
+        android:textSize="@dimen/_13ssp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:clickable="false"
+        android:minHeight="@dimen/_19sdp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_done_category_icon"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/li_done_play"
+        android:layout_width="0dp"
+        android:gravity="bottom"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintEnd_toEndOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brief_detail_done_activity">
+        <TextView
+            android:id="@+id/tv_done_play_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/kgtenthousandreasonsalt"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:text="@string/play_btn"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="normal"
+            android:layout_marginBottom="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_add_planner"
+            app:layout_constraintEnd_toEndOf="@+id/guideline12"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_brief_detail_activity" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/li_done_planner"
+        android:layout_width="0dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintEnd_toEndOf="@+id/guideline13"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brief_detail_done_activity">
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/icon_time"
+            app:layout_constraintEnd_toEndOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/tv_brief_detail_activity"
+            app:layout_constraintTop_toTopOf="@+id/li_done_play" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/add_to_planner"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/opensans_semibold"
+            app:layout_constraintEnd_toEndOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/iv_planner"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li_done_fav"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brief_detail_done_activity"
+        app:layout_constraintTop_toTopOf="@+id/li_done_play" >
+        <ImageView
+            android:id="@+id/iv_done_fav_"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_favorite_black_24dp"
+            app:layout_constraintEnd_toEndOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/tv_brief_detail_activity"
+            app:layout_constraintTop_toTopOf="@+id/li_play" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/add_to_fav"
+            android:textSize="@dimen/_10ssp"
+            android:fontFamily="@font/opensans_semibold"
+            app:layout_constraintEnd_toEndOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline13"
+            app:layout_constraintTop_toBottomOf="@+id/iv_done_fav_"/>
+    </LinearLayout>
+    <!--<ImageView
+        android:id="@+id/iv_planner"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/icon_time"
+        app:layout_constraintEnd_toEndOf="@+id/guideline13"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brief_detail_activity"
+        app:layout_constraintTop_toTopOf="@+id/li_play" />
+
+    <TextView
+        android:id="@+id/tv_add_planner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Add to planner"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/opensans_semibold"
+        app:layout_constraintEnd_toEndOf="@+id/guideline13"
+        app:layout_constraintStart_toStartOf="@+id/guideline12"
+        app:layout_constraintTop_toBottomOf="@+id/iv_planner"/>
+
+    <ImageView
+        android:id="@+id/iv_fav_"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_favorite_black_24dp"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brief_detail_activity"
+        app:layout_constraintTop_toTopOf="@+id/li_play" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Add to favourites"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/opensans_semibold"
+        app:layout_constraintEnd_toEndOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fav_"/>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/li_done_click"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/li_done_planner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#80FFFFFF"
+        android:orientation="horizontal"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:background="@color/greyColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></View>
+</LinearLayout>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "406141276978",
+    "firebase_url": "https://lifegames-f812a.firebaseio.com",
+    "project_id": "lifegames-f812a",
+    "storage_bucket": "lifegames-f812a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406141276978:android:83a3d6b86e7a3f88",
+        "android_client_info": {
+          "package_name": "com.app.lifegames"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406141276978-mu8mj5cbn2d11dtq18fso5lv8heg0qms.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.lifegames",
+            "certificate_hash": "ddcbae17131c464d3cac09581bbdda62ef61a8cb"
+          }
+        },
+        {
+          "client_id": "406141276978-c2srklol6nhaf4ia9o47o0kpnfq9iash.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.lifegames",
+            "certificate_hash": "5392170f2f595f2bde21b75205151c860c7e9594"
+          }
+        },
+        {
+          "client_id": "406141276978-10shes2amtkd3cu6agon5vat58gifho7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBePdOCvsOkgMrpdTJqXv55j76uA8VxSf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406141276978-10shes2amtkd3cu6agon5vat58gifho7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "406141276978-bpeacqnbrbn0tjl67crb1vc0tp0cmm43.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Developer.Life-Gamess"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

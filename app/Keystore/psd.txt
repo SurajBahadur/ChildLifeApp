@@ -1,0 +1,3 @@
+Keystore Path: F:\Baljit\CompanyProjext\LifeGames-Android\LifeGamesKeystore.jks
+
+Password: LifeGamesKeystore

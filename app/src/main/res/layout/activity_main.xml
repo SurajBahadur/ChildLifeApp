@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/ratebottomColor"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+    <android.support.constraint.Guideline
+
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".25" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".50" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".75" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent=".95" />
+
+    <include
+        android:id="@+id/main_menu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        layout="@layout/toolbar"></include>
+
+    <TextView
+        android:id="@+id/new_tab"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:fontFamily="@font/opensans_bold"
+        android:gravity="center"
+        android:text="@string/new_tab"
+        android:background="@drawable/border_lines_bg"
+        android:textColor="#000000"
+        android:textSize="@dimen/_13ssp"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@id/guideline11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu" />
+
+    <TextView
+        android:id="@+id/done_tab"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/opensans_bold"
+        android:text="@string/done_tab"
+        android:gravity="center"
+        android:background="@drawable/tab_bg"
+        android:textColor="#000000"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="@id/guideline12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/new_tab"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu"  />
+
+    <LinearLayout
+        android:id="@+id/fav_tab"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/opensans_bold"
+        android:background="@drawable/tab_bg"
+        android:textColor="#000000"
+        android:src="@drawable/ic_favorite_black_24dp"
+        android:gravity="center_horizontal|center_vertical|center"
+        app:layout_constraintBottom_toBottomOf="@+id/done_tab"
+        app:layout_constraintEnd_toEndOf="@id/guideline13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/done_tab"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu" >
+
+        <ImageView
+            android:padding="@dimen/_2sdp"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:src="@drawable/ic_favorite_black_24dp" />
+
+    </LinearLayout>
+
+
+
+    
+    <LinearLayout
+        android:id="@+id/premimum_tab"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/tab_bg"
+        android:textColor="#000000"
+        android:src="@drawable/icon_time"
+        app:layout_constraintBottom_toBottomOf="@+id/done_tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:gravity="center_horizontal|center_vertical|center"
+        app:layout_constraintStart_toEndOf="@id/fav_tab"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu" >
+        <ImageView
+            android:padding="@dimen/_2sdp"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:src="@drawable/icon_time"
+          />
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/container_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/whiteColor"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/done_tab" >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/item_activities_list"></android.support.v7.widget.RecyclerView>
+    </FrameLayout>
+    <FrameLayout
+        android:visibility="visible"
+        android:id="@+id/container_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu" >
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:visibility="visible"
+        android:id="@+id/container_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" >
+
+    </FrameLayout>
+
+    <!-- default twitter login button -->
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:visibility="gone"
+        android:id="@+id/default_twitter_login_button"
+        app:layout_constraintTop_toBottomOf="@+id/container_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.gms.common.SignInButton
+        app:layout_constraintTop_toBottomOf="@+id/container_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>
